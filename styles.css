@@ -1,0 +1,190 @@
+/* resets box borders */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* makes images responsive */
+
+img, picture, svg,  video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Resets all margins and paddings, and all interactive form elements inherit font*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* default dark mode */
+
+/* html {
+    color-scheme: dark light;
+} */
+
+body {
+    min-height: 100vh;
+    min-width: 30vh;
+    place-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+}
+
+.heading{
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 36px;
+    padding: 1rem;
+    padding-top: 5rem;
+    display: flex;
+    color: hsl(300, 43%, 22%);
+    font-size: 48px;
+}
+
+.productText{
+    text-align: center;
+    display: flex;
+    padding: 1rem;
+    color: hsl(303, 10%, 53%);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.reviewBox {
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    padding: 1rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.productTestimonial{
+    background-color:hsl(300, 43%, 22%);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: grid;
+}
+
+.testimonialName{
+    color: white;
+}
+
+.status{
+    color: hsl(333, 80%, 67%);
+}
+
+.testimonial {
+    color: white;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row: 1;
+    padding: 2rem 2rem 0.5rem 2rem;
+}
+
+.testimonialImage > img{
+    border-radius: 50%;
+    width: 50%;
+    display: grid;
+    align-content: center;
+}
+
+.profileInfo{
+    display: grid;
+    align-content: center;
+}
+
+.testimonial{
+    padding: 0.5rem 2rem 2rem 2rem;
+}
+
+.reviewBox {
+    background-color: hsl(300, 24%, 96%);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    justify-items: center;
+}
+
+.ratings{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 85px;
+}
+
+
+@media only screen and (min-width: 800px){
+
+    body{
+        margin: 10%;
+    }
+
+    .heading{
+        padding-top: 1rem;
+    }
+    
+    .headingWrapper{
+        text-align: left;
+    }
+
+    .productTestimonial{
+        max-width: 100%;
+    }
+
+    .testimonialWrapper{
+        display: inline-flex;
+    }
+
+    .informationWrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        place-items: center;
+    }
+
+    .reviewsWrapper{
+        max-width: 400px;
+    }
+
+    .reviews{
+        display: block;
+    }
+
+    .reviewBox{
+        display: inline-flex;
+    }
+
+    #reviewBoxSecond{
+        margin-left: 40px;
+        margin-right: -40px;
+    }
+
+    #reviewBoxThird{
+        margin-left: 80px;
+        margin-right: -80px;
+    }
+
+    #productTestimonialSecond{
+        margin-top: 40px;
+        margin-bottom: -40px;
+    }
+
+    #productTestimonialThird{
+        margin-top: 80px;
+        margin-bottom: -80px;
+    }
+}
